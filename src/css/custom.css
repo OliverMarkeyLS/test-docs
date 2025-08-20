@@ -1,0 +1,155 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Primary color scheme based on theme.ts */
+  --ifm-color-primary: #007294;
+  --ifm-color-primary-dark: #005C78;
+  --ifm-color-primary-darker: #005A75;
+  --ifm-color-primary-darkest: #003C4D;
+  --ifm-color-primary-light: #1289AC;
+  --ifm-color-primary-lighter: #249EC3;
+  --ifm-color-primary-lightest: #46B9DC;
+  
+  /* Secondary color scheme */
+  --ifm-color-secondary: #A3D64B;
+  --ifm-color-secondary-dark: #8FBE35;
+  --ifm-color-secondary-darker: #7BA624;
+  --ifm-color-secondary-darkest: #678D17;
+  --ifm-color-secondary-light: #CEF388;
+  --ifm-color-secondary-lighter: #DCF7A8;
+  --ifm-color-secondary-lightest: #E7FAC0;
+  
+  /* Tertiary color scheme */
+  --ifm-color-tertiary: #00C5F1;
+  --ifm-color-tertiary-dark: #00B3DD;
+  --ifm-color-tertiary-darker: #00A1C9;
+  --ifm-color-tertiary-darkest: #008FB5;
+  --ifm-color-tertiary-light: #66E0FF;
+  --ifm-color-tertiary-lighter: #99EBFF;
+  --ifm-color-tertiary-lightest: #B3F0FF;
+  
+  /* Additional theme colors */
+  --ifm-color-success: #2EC186;
+  --ifm-color-info: #4467E7;
+  --ifm-color-warning: #FFDD00;
+  --ifm-color-danger: #FF0000;
+  
+  /* Background colors */
+  --ifm-background-color: #F6FDFF;
+  --ifm-background-surface-color: #FFFFFF;
+  
+  /* Code styling */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 114, 148, 0.1);
+  
+  /* Border colors */
+  --ifm-border-color: #E9ECEF;
+  
+  /* Text colors */
+  --ifm-color-emphasis-900: #1A1A1A;
+  --ifm-color-emphasis-800: #2D2D2D;
+  --ifm-color-emphasis-700: #404040;
+  --ifm-color-emphasis-600: #666666;
+  --ifm-color-emphasis-500: #888888;
+  --ifm-color-emphasis-400: #AAAAAA;
+  --ifm-color-emphasis-300: #CCCCCC;
+  --ifm-color-emphasis-200: #E5E5E5;
+  --ifm-color-emphasis-100: #F5F5F5;
+  --ifm-color-emphasis-0: #FFFFFF;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  /* Primary color scheme for dark mode */
+  --ifm-color-primary: #46B9DC;
+  --ifm-color-primary-dark: #249EC3;
+  --ifm-color-primary-darker: #1289AC;
+  --ifm-color-primary-darkest: #007294;
+  --ifm-color-primary-light: #80D0E8;
+  --ifm-color-primary-lighter: #CAECF6;
+  --ifm-color-primary-lightest: #E6F5F8;
+  
+  /* Secondary color scheme for dark mode */
+  --ifm-color-secondary: #CEF388;
+  --ifm-color-secondary-dark: #A3D64B;
+  --ifm-color-secondary-darker: #8FBE35;
+  --ifm-color-secondary-darkest: #7BA624;
+  --ifm-color-secondary-light: #DCF7A8;
+  --ifm-color-secondary-lighter: #E7FAC0;
+  --ifm-color-secondary-lightest: #EFFCD5;
+  
+  /* Tertiary color scheme for dark mode */
+  --ifm-color-tertiary: #66E0FF;
+  --ifm-color-tertiary-dark: #00C5F1;
+  --ifm-color-tertiary-darker: #00B3DD;
+  --ifm-color-tertiary-darkest: #00A1C9;
+  --ifm-color-tertiary-light: #99EBFF;
+  --ifm-color-tertiary-lighter: #B3F0FF;
+  --ifm-color-tertiary-lightest: #CCF5FF;
+  
+  /* Additional theme colors for dark mode */
+  --ifm-color-success: #5AD9A6;
+  --ifm-color-info: #6E8AF0;
+  --ifm-color-warning: #F8DC28;
+  --ifm-color-danger: #FD3636;
+  
+  /* Background colors for dark mode */
+  --ifm-background-color: #1A1A1A;
+  --ifm-background-surface-color: #2D2D2D;
+  
+  /* Code styling for dark mode */
+  --docusaurus-highlighted-code-line-bg: rgba(70, 185, 220, 0.3);
+  
+  /* Border colors for dark mode */
+  --ifm-border-color: #404040;
+  
+  /* Text colors for dark mode */
+  --ifm-color-emphasis-0: #1A1A1A;
+  --ifm-color-emphasis-100: #2D2D2D;
+  --ifm-color-emphasis-200: #404040;
+  --ifm-color-emphasis-300: #666666;
+  --ifm-color-emphasis-400: #888888;
+  --ifm-color-emphasis-500: #AAAAAA;
+  --ifm-color-emphasis-600: #CCCCCC;
+  --ifm-color-emphasis-700: #E5E5E5;
+  --ifm-color-emphasis-800: #F5F5F5;
+  --ifm-color-emphasis-900: #FFFFFF;
+}
+
+/* Custom utility classes based on theme colors */
+.primary-bg {
+  background-color: var(--ifm-color-primary);
+}
+
+.primary-light-bg {
+  background-color: var(--ifm-color-primary-lightest);
+}
+
+.secondary-bg {
+  background-color: var(--ifm-color-secondary);
+}
+
+.tertiary-bg {
+  background-color: var(--ifm-color-tertiary);
+}
+
+.success-bg {
+  background-color: var(--ifm-color-success);
+}
+
+.info-bg {
+  background-color: var(--ifm-color-info);
+}
+
+.warning-bg {
+  background-color: var(--ifm-color-warning);
+}
+
+.danger-bg {
+  background-color: var(--ifm-color-danger);
+}
